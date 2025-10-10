@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"os"
+	"strings"
 
 	ics "github.com/arran4/golang-ical"
 )
@@ -50,9 +51,8 @@ func (rapla *Rapla) filterEvents(blocklist []string) {
 	filteredCal := ics.NewCalendar()
 	for _, event := range rapla.cal.Events() {
 		blocklisted := false
-		for _, title := range blocklist {
-			// Check if the event's summary matches any title in the blocklist
-			if prop := event.GetProperty(ics.ComponentPropertySummary); prop != nil && prop.Value == title {
+		for _, blockedTitle := range blocklist {
+			if evenProperty := event.GetProperty(ics.ComponentPropertySummary); evenProperty != nil && evenProperty.Value == blockedTitle || strings.Contains(evenProperty.Value, blockedTitle) && evenProperty != nil {
 				blocklisted = true
 				break
 			}

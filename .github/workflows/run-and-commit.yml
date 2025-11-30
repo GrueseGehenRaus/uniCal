@@ -21,6 +21,9 @@ jobs:
         with:
           go-version: "^1.23.0" # Ensure a compatible Go version is used
 
+      - name: Get certificate
+        run: ./ca/fetch_ca.sh
+
       - name: Install dependencies
         run: go mod tidy
 

@@ -5,9 +5,14 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"crypto/tls"
+    "crypto/x509"
+    "io/ioutil"
 
 	ics "github.com/arran4/golang-ical"
 )
+
+const customCertPath = "dhbw_rapla_cert.pem"
 
 type Rapla struct {
 	cal *ics.Calendar
@@ -15,17 +20,42 @@ type Rapla struct {
 
 // Creating a new Rapla instance based on a provided URL
 func FetchNewRaplaInstance(url string) (*Rapla, error) {
-	resp, err := http.Get(url)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
+	// Fetch the iCal data from the URL if found
+	caCert, err := ioutil.ReadFile(customCertPath)
+    if err != nil {
+        return nil, err
+    }
+	caCertPool := x509.NewCertPool()
+    caCertPool.AppendCertsFromPEM(caCert)
 
-	cal, err := ics.ParseCalendar(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-	return &Rapla{cal: cal}, nil
+	// Create tls configuration with the custom CA
+	tlsConfig := &tls.Config{
+        RootCAs: caCertPool,
+    }
+	// Configure tls to be skipped if needed
+	// tlsConfig := &tls.Config{
+    //     // THIS IS INSECURE: Disables certificate validation
+    //     InsecureSkipVerify: true, 
+    // }
+
+    // Create a custom HTTP client using a Transport with the TLS config
+    client := &http.Client{
+        Transport: &http.Transport{
+            TLSClientConfig: tlsConfig,
+        },
+    }
+
+	resp, err := client.Get(url)
+    if err != nil {
+        return nil, err
+    }
+    defer resp.Body.Close()
+
+    cal, err := ics.ParseCalendar(resp.Body)
+    if err != nil {
+        return nil, err
+    }
+    return &Rapla{cal: cal}, nil
 }
 
 // Save the filtered calendar to a file

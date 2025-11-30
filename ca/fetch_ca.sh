@@ -1,4 +1,4 @@
-FETCH_URL=$(grep 'origin_url' /home/frank/tmp/coding/uniCal/config/blocklist.yaml | awk '{print $2}')
+FETCH_URL=$(grep 'origin_url' ./config/blocklist.yaml | awk '{print $2}')
 
 if [ -z "$FETCH_URL" ]; then
     echo "Error: Failed to fetch the origin_url from blocklist.yaml" >&2

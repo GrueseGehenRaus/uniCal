@@ -1,47 +1,62 @@
 origin_url: https://rapla.dhbw-karlsruhe.de/rapla?page=ical&user=freudenmann&file=TINF23B1
 blocklist:
-    - Interaktive Systeme (KI & IS)
+    - .Grundlagen der KI (KI & BV)
+    - STUV-ADA 3 (freiwilliger Zusatz)
     - e Business
+    - Nachklausuren  (120 min)
     - Mobile Applikationen
     - Ethik für Informatiker (WM-A)
+    - Exkursion Fa. VECTOR in Karlsruhe
     - Netzwerktreffen für Studentinnen
-    - Grundlagen der KI (KI & IS)
     - Vorbereitungsraum mündl. Prüfung
     - mündl. Prüfung  ( min)
-    - STUV-ADA 3 (freiwilliger Zusatz)
+    - Consulting und techn. Vertrieb
     - Computergraphik  (BV & CG)
     - Supervised Machine Learning
-    - Klausur Wahlmodul Bildverarbeitung (KI und BV)  (60 min)
     - Supervised Machine Learning Exam  (60 min)
     - Klausurwoche 5. Semester
     - Klausurwoche
+    - Klausur Wahlmodul Künstliche Intelligenz und Bildverarbeitung  (120 min)
     - Klausur eBusiness  (90 min)
     - Klausur Wahlmodul Computergrafik und Bildverarbeitung  (120 min)
-    - Klausur Wahlmodul Künstliche Intelligenz und Bildverarbeitung  (60 min)
     - Klausur Mathematische Grundlagen der Kryptographie (60 min)
     - Klausur Zuverlässige Embedded Systeme (60 min)
     - Klausur Forensik (60 min)
     - Beginn Theorie 6. Semester
-    - Start 6. Semester
-    - Semesterstart 6.Semester
     - Faschingsdienstag
-    - Krankenhausinformationssysteme (MD)
-    - Fronleichnam
-    - Pfingstmontag
-    - Christi Himmelfahrt
-    - Klausurwoche 6. Semester
-    - Ostermontag
     - Karfreitag
+    - Ostermontag
+    - Klausurwoche 6. Semester
+    - Christi Himmelfahrt
+    - Pfingstmontag
+    - Fronleichnam
+    - Krankenhausinformationssysteme (MD)
+    - Bildverarbeitung (aus CG und BV)
+    - Grundlagen KI (aus KI und BV)
+    - Robotik 2
     - angewandtes Projektmanagement (eB&PJM)
     - Controlling im Gesundhtswsn (MD)
+    - Robotik 1
+    - Computergrafik (aus CG und BV)
+    - Bildverarbeitung (aus KI und BV)
+    - Kolloquium TINF23 Nachtermin  ( min)
+    - Einführung in RUST
+    - Management von IT-Infrastrukturen
+    - Forensik
+    - Psychologische Grundlagen für Informatiker (W)
+    - Digitale Audiosignalverarbeitung
+    - Explainable AI
+    - Grundlagen der Finiten Elemente
+    - High Performance Computing
     - e Business (eB&PJM)
-    - Mathematische Grundlagen der Kryptographie
-    - Gamification
-    - Digitale Forensik  (WMA)
-    - Evolutionäre Algorithmen
-    - Bildverarbeitung (KI & BV)
-    - .Grundlagen der KI (KI & BV)
-    - Bildverarbetiung  (BV & CG)
-    - angewandtes Projektmanagement
-    - Klausur Wahlmodul KI (Künstliche Intelligenz und Bildverarbeitung)  (60 min)
-    - Medizinische Informatik
+    - Exkursion DEMEA (Medizinische Informatik)
+    - Klausur Digitale Augiosignalverarbeitung  (60 min)
+    - Klausur Einführung in RUST (60 min)
+    - Klausur Erklärebare KI  (60 min)
+    - Klausur Finite Elemente  (60 min)
+    - Klausuren 6. Semester
+    - Klausur Robotik 1+2  (120 min)
+    - Klausur Grundlagen KI und Bildverarbeitung  (120 min)
+    - Klausur Computergraphik und Bildverarbeitung  (120 min)
+notes:
+    Games und Gaming: (ONLINE)

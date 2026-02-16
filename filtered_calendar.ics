@@ -3044,6 +3044,52 @@ CATEGORIES:Prüfung
 ORGANIZER;CN=Strand\, Marcus:MAILTO:marcus.strand@dhbw-karlsruhe.de
 END:VEVENT
 BEGIN:VEVENT
+LAST-MODIFIED:20260215T155450Z
+CREATED:20181029T094927Z
+DTSTART:20260525T060000Z
+DTSTAMP:20260215T155450Z
+DTEND:20260525T160000Z
+UID:ae2cbed1-e332-4d75-9f09-ec4b769436e1
+SUMMARY:Pfingstmontag
+LOCATION:
+CATEGORIES:Sonstiger Termin
+ORGANIZER;CN=Freudenmann\,
+  Johannes:MAILTO:johannes.freudenmann@dhbw-karlsruhe.de
+ATTENDEE;CN=Schätzle\,
+  Roland;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:roland.schaetzle@dhb
+ w-karlsruhe.de
+ATTENDEE;CN=Budurushi\,
+  Jurlind;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:jurlind.budurushi@d
+ hbw-karlsruhe.de
+ATTENDEE;CN=Lausen\,
+  Ralph;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:ralph.lausen@dhbw-kar
+ lsruhe.de
+ATTENDEE;CN=Freudenmann\,
+  Johannes;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:johannes.freudenma
+ nn@dhbw-karlsruhe.de
+ATTENDEE;CN=Vollmer\,
+  Jürgen;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:juergen.vollmer@dhb
+ w-karlsruhe.de
+ATTENDEE;CN=Strand\,
+  Marcus;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:marcus.strand@dhbw-k
+ arlsruhe.de
+ATTENDEE;CN=Röthig\,
+  Jürgen;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:juergen.roethig@dhb
+ w-karlsruhe.de
+ATTENDEE;CN=Ritterbusch\,
+  Sebastian;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:sebastian.ritterb
+ usch@dhbw-karlsruhe.de
+ATTENDEE;CN=Eisenbiegler\,
+  Jörn;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:joern.eisenbiegler@dh
+ bw-karlsruhe.de
+ATTENDEE;CN=Li\,
+  Nuo;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:nuo.li@dhbw-karlsruhe.d
+ e
+ATTENDEE;CN=Pacher\,
+  Mathias;PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:MAILTO:mathias.pacher@dhbw
+ -karlsruhe.de
+END:VEVENT
+BEGIN:VEVENT
 LAST-MODIFIED:20251118T060741Z
 CREATED:20140730T135157Z
 DTSTART:20251219T080000Z
